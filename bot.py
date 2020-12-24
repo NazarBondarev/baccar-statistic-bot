@@ -17,15 +17,15 @@ async def normal_handler(event):
     result = re.search(r"#R", msg)
 
     if not result:
-        if not_r_count < 10:
+        if not_r_count < 5:
             not_r_count += 1
-        elif not_r_count >= 10:
+        elif not_r_count >= 5:
             not_r_count -= not_r_count
             not_r_count += 1
         print(not_r_count, result)
 
     else:
-        if not_r_count == 9:
+        if not_r_count == 4:
             not_r_count += 1
             await client.send_message('Andriuhovici', 'ВЫПАЛА НУЖНАЯ КОМБИНАЦИЯ. 10 #R')
 
