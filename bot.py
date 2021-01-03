@@ -3,9 +3,9 @@ from telethon import TelegramClient, sync, events
 import re
 
 
-api_id = 2591217                  # API ID (получается при регистрации приложения на my.telegram.org)
-api_hash = "9a3798e50de53d54d31b1cde0fa2a5b5"              # API Hash (оттуда же)
-phone_number = "+380951214072"    # Номер телефона аккаунта, с которого будет выполняться код
+api_id = #                  # API ID (получается при регистрации приложения на my.telegram.org)
+api_hash = ""              # API Hash (оттуда же)
+phone_number = ""    # Номер телефона аккаунта, с которого будет выполняться код
 client = TelegramClient('session_name', api_id, api_hash)
 not_r_count = 0
 r_count = 0
